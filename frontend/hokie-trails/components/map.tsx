@@ -9,9 +9,9 @@ import { GoogleMap, Marker } from "@react-google-maps/api";
 
 //Map's styling
 const defaultMapContainerStyle = {
-    width: '80%',
+    width: '95%',
     height: '80vh',
-    borderRadius: '15px 0px 0px 15px',
+    borderRadius: '15px 15px 15px 15px',
 };
 
 //K2's coordinates, currently set at Yosemite
@@ -37,8 +37,8 @@ const MapComponent = () => {
         style={{
             position: 'fixed',
             bottom: '20px',
-            right: '-15%',
-            width: '90%',
+            right: '-3%',
+            width: '95%',
             height: '80vh',
             borderRadius: '15px',
             overflow: 'hidden',
