@@ -33,31 +33,9 @@ const defaultMapOptions = {
 
 const MapComponent = () => {
     return (
-        <div className="w-full" 
-        style={{
-            position: 'fixed',
-            bottom: '20px',
-            right: '-3%',
-            width: '95%',
-            height: '80vh',
-            borderRadius: '15px',
-            overflow: 'hidden',
-            zIndex: 10}}>
-
-<<<<<<< Updated upstream
-            <GoogleMap 
-            mapContainerStyle={defaultMapContainerStyle}
-            center = {defaultMapCenter}
-            zoom= {defaultMapZoom}
-            options={defaultMapOptions}
-            >
-                <Marker
-                position = {defaultMapCenter}
-                ></Marker>
-            </GoogleMap>
-=======
         <div className="box">
             <h1 className="title">Let's Go Hiking!</h1>
+
             <div className="w-full">
                 <GoogleMap 
                 mapContainerStyle={defaultMapContainerStyle}
@@ -70,8 +48,12 @@ const MapComponent = () => {
                     ></Marker>
                 </GoogleMap>
             </div>
->>>>>>> Stashed changes
         </div>
+        
+            
+
+
+        
     )
 };
 
