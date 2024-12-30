@@ -33,28 +33,26 @@ const defaultMapOptions = {
 
 const MapComponent = () => {
     return (
-        <div className="w-full" 
-        style={{
-            position: 'fixed',
-            bottom: '20px',
-            right: '-3%',
-            width: '95%',
-            height: '80vh',
-            borderRadius: '15px',
-            overflow: 'hidden',
-            zIndex: 10}}>
 
-            <GoogleMap 
-            mapContainerStyle={defaultMapContainerStyle}
-            center = {defaultMapCenter}
-            zoom= {defaultMapZoom}
-            options={defaultMapOptions}
-            >
-                <Marker
-                position = {defaultMapCenter}
-                ></Marker>
-            </GoogleMap>
+        <div className="box">
+            <div className="w-full">
+                <GoogleMap 
+                mapContainerStyle={defaultMapContainerStyle}
+                center = {defaultMapCenter}
+                zoom= {defaultMapZoom}
+                options={defaultMapOptions}
+                >
+                    <Marker
+                    position = {defaultMapCenter}
+                    ></Marker>
+                </GoogleMap>
+            </div>
         </div>
+        
+            
+
+
+        
     )
 };
 

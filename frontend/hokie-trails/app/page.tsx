@@ -7,12 +7,11 @@ export default function Home() {
     <main>
       <NavBar>
       </NavBar>
-
       <MapProvider>
         <MapComponent>
         </MapComponent>
       </MapProvider>
-
+      
       
 
 
