@@ -44,6 +44,7 @@ const MapComponent = () => {
             overflow: 'hidden',
             zIndex: 10}}>
 
+<<<<<<< Updated upstream
             <GoogleMap 
             mapContainerStyle={defaultMapContainerStyle}
             center = {defaultMapCenter}
@@ -54,6 +55,22 @@ const MapComponent = () => {
                 position = {defaultMapCenter}
                 ></Marker>
             </GoogleMap>
+=======
+        <div className="box">
+            <h1 className="title">Let's Go Hiking!</h1>
+            <div className="w-full">
+                <GoogleMap 
+                mapContainerStyle={defaultMapContainerStyle}
+                center = {defaultMapCenter}
+                zoom= {defaultMapZoom}
+                options={defaultMapOptions}
+                >
+                    <Marker
+                    position = {defaultMapCenter}
+                    ></Marker>
+                </GoogleMap>
+            </div>
+>>>>>>> Stashed changes
         </div>
     )
 };
