@@ -63,16 +63,38 @@ nav ul {
   
 }
 
+/* Position of navbar */
 nav li {
   display: block;
   margin-bottom: 40px;
 }
 
+/* Link text color */
 nav a {
   color: black;
 }
-
+/* Font of link */
 nav a.active {
   font-weight: bold;
 }
+
+/* Search box */
+input{
+  border-radius: 20px 20px 20px 20px; 
+  outline-style: solid;
+  margin-top: 5%;
+  margin-left: 25%;
+  padding: 24px 20px;
+  width: 50%;
+  background-color: rgb(232, 215, 232);
+  color: black;
+}
+
+/* Text of input search box */
+#autocomplete-input::placeholder{
+  color: black;
+  opacity: 1;
+}
+
+
 

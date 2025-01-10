@@ -7,6 +7,10 @@ we need to make this component client rendered as well else error occurs
 //Map component Component from library
 import { GoogleMap, Marker } from "@react-google-maps/api";
 
+import AutocompleteInput from './search-bar';
+import React from "react";
+
+
 //Map's styling
 const defaultMapContainerStyle = {
     width: '95%',
@@ -31,10 +35,23 @@ const defaultMapOptions = {
     
 };
 
-const MapComponent = () => {
+
+
+
+const MapComponent: React.FC = () => {
+
+    const handlePlaceSelected = (place: google.maps.places.PlaceResult) => {
+        // Handle the selected place details
+        console.log(place);
+      };
+
     return (
         <div className="box">
             <h1 className="title">Let's Go Hiking!</h1>
+
+            <AutocompleteInput onPlaceSelected={handlePlaceSelected} >
+            </AutocompleteInput>
+            
 
             <div className="w-full">
                 <GoogleMap 
