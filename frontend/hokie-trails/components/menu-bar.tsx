@@ -41,7 +41,7 @@ const NavBar = () => {
                 {navLinks.map((item) => (
                     <li key={item.href}>
                     <Link href={item.href} className={pathname === item.href ? 'active' : ''}>
-                        <Image src = {item.icon} alt = "Icon" width= {30} height={30}></Image>
+                        <Image src = {item.icon} alt = "Icon" width= {35} height={35}></Image>
                         {item.name}
                     </Link>
                     </li>
