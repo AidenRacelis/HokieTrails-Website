@@ -11,26 +11,32 @@ const AutocompleteInput: React.FC<Props> = ({ onPlaceSelected }) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const options = {
-        // Restrict the autocomplete to address-related results
-        types: ['address'],
-        // Restrict to a specific country (optional)
-        componentRestrictions: { country: 'us' }
-      };
+        const options = {
+            types: ['address'],
+            componentRestrictions: { country: 'us' }
+        };
 
-      autocompleteRef.current = new google.maps.places.Autocomplete(
-        document.getElementById('autocomplete-input') as HTMLInputElement,
-        options
-      );
+        const input = document.getElementById('autocomplete-input') as HTMLInputElement;
+        if (input) {
+            autocompleteRef.current = new google.maps.places.Autocomplete(input, options);
 
-      autocompleteRef.current.addListener('place_changed', () => {
-        const place = autocompleteRef.current?.getPlace();
-        if (place) {
-          onPlaceSelected(place);
+            autocompleteRef.current.addListener('place_changed', () => {
+                const place = autocompleteRef.current?.getPlace();
+                if (place) {
+                    // Make sure we have geometry before calling the callback
+                    if (place.geometry && place.geometry.location) {
+                        onPlaceSelected(place);
+                        
+                        // Optionally update the input value to the formatted address
+                        if (place.formatted_address) {
+                            setInputValue(place.formatted_address);
+                        }
+                    }
+                }
+            });
         }
-      });
     }
-  }, []);
+  }, [onPlaceSelected]);
 
   return (
     <div>

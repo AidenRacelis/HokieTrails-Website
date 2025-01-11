@@ -8,7 +8,7 @@ we need to make this component client rendered as well else error occurs
 import { GoogleMap, Marker } from "@react-google-maps/api";
 
 import AutocompleteInput from './search-bar';
-import React from "react";
+import React, { useState, useRef } from "react";
 
 
 //Map's styling
@@ -25,7 +25,7 @@ const defaultMapCenter = {
 }
 
 //Default zoom level, can be adjusted
-const defaultMapZoom = 10
+const defaultMapZoom = 15
 
 //Map options
 const defaultMapOptions = {
@@ -40,10 +40,38 @@ const defaultMapOptions = {
 
 const MapComponent: React.FC = () => {
 
-    const handlePlaceSelected = (place: google.maps.places.PlaceResult) => {
-        // Handle the selected place details
-        console.log(place);
+    // Add state to track the current map center
+    const [mapCenter, setMapCenter] = useState(defaultMapCenter);
+    // Add state to track the marker position
+    const [markerPosition, setMarkerPosition] = useState(defaultMapCenter);
+
+      // Add ref for map instance
+      const mapRef = useRef<google.maps.Map | null>(null);
+
+      // Handle map load
+      const onMapLoad = (map: google.maps.Map) => {
+          mapRef.current = map;
       };
+
+    const handlePlaceSelected = (place: google.maps.places.PlaceResult) => {
+        if (place.geometry && place.geometry.location) {
+            const newLocation = {
+                lat: place.geometry.location.lat(),
+                lng: place.geometry.location.lng()
+            };
+            
+            // Update both map center and marker position
+            setMapCenter(newLocation);
+            setMarkerPosition(newLocation);
+
+             // If we have a map instance, pan to the new location
+             if (mapRef.current) {
+                mapRef.current.panTo(newLocation);
+            }
+            
+            console.log('Selected location:', newLocation);
+        }
+    };
 
     return (
         <div className="box">
@@ -56,12 +84,12 @@ const MapComponent: React.FC = () => {
             <div className="w-full">
                 <GoogleMap 
                 mapContainerStyle={defaultMapContainerStyle}
-                center = {defaultMapCenter}
+                center = {mapCenter}
                 zoom= {defaultMapZoom}
                 options={defaultMapOptions}
                 >
                     <Marker
-                    position = {defaultMapCenter}
+                    position = {markerPosition}
                     ></Marker>
                 </GoogleMap>
             </div>
