@@ -1,3 +1,10 @@
 backend/venv
 frontend/hokie-trails/node_modules
 .env
+
+# Runtime user database (contains password hashes) - never commit
+backend/data/users.json
+
+# Python bytecode / caches
+__pycache__/
+*.pyc
