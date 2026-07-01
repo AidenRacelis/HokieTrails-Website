@@ -1,26 +1,33 @@
-//Since the map will be laoded and displayed on client side
-'use client';
+"use client";
 
-// Import necessary modules and functions from external libraries and our own project
-import { Libraries, useJsApiLoader } from '@react-google-maps/api';
-import { ReactNode } from 'react';
+import { Libraries, useJsApiLoader } from "@react-google-maps/api";
+import { ReactNode } from "react";
 
-// Define a list of libraries to load from the Google Maps API
-const libraries = ['places', 'drawing', 'geometry'];
+const libraries = ["places", "drawing", "geometry"];
 
-// Define a function component called MapProvider that takes a children prop
 export function MapProvider({ children }: { children: ReactNode }) {
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAP_API as string | undefined;
 
-  // Load the Google Maps JavaScript API asynchronously
   const { isLoaded: scriptLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAP_API as string,
+    googleMapsApiKey: apiKey || "",
     libraries: libraries as Libraries,
   });
 
-  if(loadError) return <p>Encountered error while loading google maps</p>
+  if (!apiKey) {
+    return (
+      <div className="card" style={{ padding: 20 }}>
+        <strong>Map unavailable.</strong>
+        <p style={{ margin: "6px 0 0", color: "#5c6472", fontSize: 14 }}>
+          Set <code>NEXT_PUBLIC_GOOGLE_MAP_API</code> in <code>.env.local</code> to
+          enable the interactive Google Map. The trail list below still works
+          without it.
+        </p>
+      </div>
+    );
+  }
 
-  if(!scriptLoaded) return <p>Map Script is loading ...</p>
+  if (loadError) return <p>Encountered an error while loading Google Maps.</p>;
+  if (!scriptLoaded) return <p>Map is loading…</p>;
 
-  // Return the children prop wrapped by this MapProvider component
-  return children;
+  return <>{children}</>;
 }
