@@ -41,6 +41,10 @@ def create_app(service: str | None = None, config: Config | None = None) -> Flas
     app.config.from_object(config)
     app.config["hokietrails_config"] = config
 
+    # Treat "/api/trails" and "/api/trails/" identically so reverse proxies
+    # (Next.js rewrites, nginx) never trigger a slash-mismatch redirect loop.
+    app.url_map.strict_slashes = False
+
     CORS(app, resources={r"/*": {"origins": config.CORS_ORIGINS}}, supports_credentials=True)
 
     mounted: list[str] = []

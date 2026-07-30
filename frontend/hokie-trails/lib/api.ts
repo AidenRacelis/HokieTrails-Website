@@ -5,8 +5,13 @@ import type {
   User,
 } from "./types";
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") || "http://localhost:5000";
+// When NEXT_PUBLIC_API_URL is set, call that absolute URL (e.g. a public API
+// gateway). Otherwise use same-origin relative paths and let the Next.js server
+// proxy /api/* to the backend (see next.config.ts rewrites). Same-origin avoids
+// CORS and works behind a single forwarded port.
+const API_URL = process.env.NEXT_PUBLIC_API_URL
+  ? process.env.NEXT_PUBLIC_API_URL.replace(/\/$/, "")
+  : "";
 
 const TOKEN_KEY = "hokie_token";
 
