@@ -1,0 +1,77 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: housing-data
+  namespace: hokietrails
+spec:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: housing-service
+  namespace: hokietrails
+  labels:
+    app: housing-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: housing-service
+  template:
+    metadata:
+      labels:
+        app: housing-service
+    spec:
+      containers:
+        - name: housing
+          image: hokietrails/backend:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: SERVICE
+              value: "housing"
+            - name: DATA_DIR
+              value: "/data"
+            - name: CORS_ORIGINS
+              value: "*"
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: hokie-secrets
+                  key: SECRET_KEY
+          ports:
+            - containerPort: 5000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          volumeMounts:
+            - name: data
+              mountPath: /data
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: housing-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: housing-service
+  namespace: hokietrails
+spec:
+  selector:
+    app: housing-service
+  ports:
+    - port: 5000
+      targetPort: 5000

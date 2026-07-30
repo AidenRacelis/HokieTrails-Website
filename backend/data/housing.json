@@ -1,0 +1,253 @@
+[
+  {
+    "id": "peaks-of-otter-lodge",
+    "name": "Peaks of Otter Lodge",
+    "type": "lodge",
+    "town": "Bedford",
+    "county": "Bedford County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.4487,
+      "lng": -79.6035,
+      "x": -79.6035,
+      "y": 37.4487
+    },
+    "price_per_night": 165,
+    "rating": 4.4,
+    "reviews": 1820,
+    "amenities": [
+      "lakefront",
+      "restaurant",
+      "pet-friendly",
+      "wifi"
+    ],
+    "nearby_trail_ids": [
+      "sharp-top"
+    ],
+    "description": "Lakeside lodge at the base of the Peaks of Otter on the Blue Ridge Parkway."
+  },
+  {
+    "id": "big-meadows-lodge",
+    "name": "Big Meadows Lodge",
+    "type": "lodge",
+    "town": "Luray",
+    "county": "Page County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.5217,
+      "lng": -78.436,
+      "x": -78.436,
+      "y": 38.5217
+    },
+    "price_per_night": 185,
+    "rating": 4.3,
+    "reviews": 2450,
+    "amenities": [
+      "restaurant",
+      "views",
+      "wifi",
+      "historic"
+    ],
+    "nearby_trail_ids": [
+      "hawksbill-mountain",
+      "stony-man",
+      "bearfence-mountain"
+    ],
+    "description": "Rustic stone-and-timber lodge in the heart of Shenandoah National Park."
+  },
+  {
+    "id": "skyland-resort",
+    "name": "Skyland Resort",
+    "type": "lodge",
+    "town": "Luray",
+    "county": "Page County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.5936,
+      "lng": -78.381,
+      "x": -78.381,
+      "y": 38.5936
+    },
+    "price_per_night": 199,
+    "rating": 4.3,
+    "reviews": 2980,
+    "amenities": [
+      "highest-point",
+      "restaurant",
+      "views",
+      "horseback"
+    ],
+    "nearby_trail_ids": [
+      "stony-man",
+      "hawksbill-mountain"
+    ],
+    "description": "The highest lodging in Shenandoah, perched at 3,680 feet on Skyline Drive."
+  },
+  {
+    "id": "catawba-farm-cabin",
+    "name": "Catawba Valley Farm Cabin",
+    "type": "cabin",
+    "town": "Catawba",
+    "county": "Roanoke County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.382,
+      "lng": -80.09,
+      "x": -80.09,
+      "y": 37.382
+    },
+    "price_per_night": 140,
+    "rating": 4.7,
+    "reviews": 320,
+    "amenities": [
+      "kitchen",
+      "fireplace",
+      "pet-friendly",
+      "mountain-views"
+    ],
+    "nearby_trail_ids": [
+      "mcafee-knob",
+      "dragons-tooth",
+      "tinker-cliffs"
+    ],
+    "description": "Cozy private cabin minutes from the Roanoke Triple Crown trailheads."
+  },
+  {
+    "id": "montebello-camp",
+    "name": "Montebello Camping & Fishing Resort",
+    "type": "campground",
+    "town": "Montebello",
+    "county": "Nelson County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.856,
+      "lng": -79.121,
+      "x": -79.121,
+      "y": 37.856
+    },
+    "price_per_night": 55,
+    "rating": 4.5,
+    "reviews": 640,
+    "amenities": [
+      "fishing",
+      "camp-store",
+      "cabins",
+      "stream"
+    ],
+    "nearby_trail_ids": [
+      "crabtree-falls",
+      "the-priest",
+      "spy-rock"
+    ],
+    "description": "Family campground and trout pond near Crabtree Falls and The Priest."
+  },
+  {
+    "id": "grayson-highlands-camp",
+    "name": "Grayson Highlands State Park Campground",
+    "type": "campground",
+    "town": "Whitetop",
+    "county": "Grayson County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 36.628,
+      "lng": -81.506,
+      "x": -81.506,
+      "y": 36.628
+    },
+    "price_per_night": 45,
+    "rating": 4.7,
+    "reviews": 910,
+    "amenities": [
+      "wild-ponies",
+      "showers",
+      "electric-sites",
+      "views"
+    ],
+    "nearby_trail_ids": [
+      "mount-rogers"
+    ],
+    "description": "High-elevation state park campground and gateway to the wild ponies."
+  },
+  {
+    "id": "pembroke-riverside-inn",
+    "name": "New River Riverside Inn",
+    "type": "hotel",
+    "town": "Pembroke",
+    "county": "Giles County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.32,
+      "lng": -80.638,
+      "x": -80.638,
+      "y": 37.32
+    },
+    "price_per_night": 120,
+    "rating": 4.2,
+    "reviews": 410,
+    "amenities": [
+      "riverfront",
+      "breakfast",
+      "wifi",
+      "kayak-rental"
+    ],
+    "nearby_trail_ids": [
+      "cascades-falls"
+    ],
+    "description": "Riverside inn on the New River, close to the Cascades trailhead."
+  },
+  {
+    "id": "syria-graves-farm",
+    "name": "Graves Mountain Lodge",
+    "type": "lodge",
+    "town": "Syria",
+    "county": "Madison County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.498,
+      "lng": -78.356,
+      "x": -78.356,
+      "y": 38.498
+    },
+    "price_per_night": 150,
+    "rating": 4.5,
+    "reviews": 780,
+    "amenities": [
+      "farm-to-table",
+      "cabins",
+      "family-friendly",
+      "orchard"
+    ],
+    "nearby_trail_ids": [
+      "old-rag-mountain",
+      "white-oak-canyon"
+    ],
+    "description": "Working-farm lodge at the foot of Old Rag and White Oak Canyon."
+  },
+  {
+    "id": "waynesboro-lodge",
+    "name": "Iris Inn Waynesboro",
+    "type": "hotel",
+    "town": "Waynesboro",
+    "county": "Augusta County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.0685,
+      "lng": -78.8895,
+      "x": -78.8895,
+      "y": 38.0685
+    },
+    "price_per_night": 210,
+    "rating": 4.6,
+    "reviews": 1130,
+    "amenities": [
+      "mountain-views",
+      "hot-tub",
+      "breakfast",
+      "wifi"
+    ],
+    "nearby_trail_ids": [
+      "humpback-rocks"
+    ],
+    "description": "Boutique inn overlooking the Shenandoah Valley near the Parkway."
+  }
+]

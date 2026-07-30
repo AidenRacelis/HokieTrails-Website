@@ -1,0 +1,709 @@
+[
+  {
+    "id": "mcafee-knob",
+    "name": "McAfee Knob",
+    "town": "Catawba",
+    "county": "Roanoke County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.3917,
+      "lng": -80.0367,
+      "x": -80.0367,
+      "y": 37.3917
+    },
+    "length_miles": 8.8,
+    "elevation_gain_ft": 1740,
+    "highest_elevation_ft": 3197,
+    "difficulty": "medium",
+    "elevation_difficulty": "sustained climb",
+    "route_type": "out-and-back",
+    "description": "The most photographed spot on the Appalachian Trail. A steady climb along the AT leads to a dramatic overhanging rock ledge with sweeping views of the Catawba Valley and Tinker Cliffs.",
+    "features": [
+      "overlook",
+      "appalachian-trail",
+      "dog-friendly"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.8,
+        "reviews": 3120
+      },
+      "alltrails": {
+        "rating": 4.8,
+        "reviews": 4890
+      }
+    },
+    "routes": [
+      {
+        "name": "McAfee Knob via Appalachian Trail",
+        "distance_miles": 8.8,
+        "difficulty": "medium",
+        "elevation_gain_ft": 1740,
+        "type": "out-and-back",
+        "description": "Classic AT approach from the VA-311 parking lot."
+      },
+      {
+        "name": "McAfee Knob + Tinker Cliffs (via Andy Layne)",
+        "distance_miles": 18.9,
+        "difficulty": "hard",
+        "elevation_gain_ft": 3900,
+        "type": "point-to-point",
+        "description": "The full Catawba 'Triple Crown' leg between the two overlooks."
+      }
+    ]
+  },
+  {
+    "id": "old-rag-mountain",
+    "name": "Old Rag Mountain",
+    "town": "Etlan",
+    "county": "Madison County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.5518,
+      "lng": -78.317,
+      "x": -78.317,
+      "y": 38.5518
+    },
+    "length_miles": 9.5,
+    "elevation_gain_ft": 2415,
+    "highest_elevation_ft": 3291,
+    "difficulty": "hard",
+    "elevation_difficulty": "strenuous scramble",
+    "route_type": "loop",
+    "description": "Shenandoah National Park's most famous and demanding hike, featuring a long rock scramble across the summit ridge with panoramic Blue Ridge views. A day-use ticket is required March-November.",
+    "features": [
+      "summit",
+      "rock-scramble",
+      "ticketed"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.8,
+        "reviews": 4260
+      },
+      "alltrails": {
+        "rating": 4.8,
+        "reviews": 6100
+      }
+    },
+    "routes": [
+      {
+        "name": "Old Rag Ridge & Saddle Loop",
+        "distance_miles": 9.5,
+        "difficulty": "hard",
+        "elevation_gain_ft": 2415,
+        "type": "loop",
+        "description": "Ridge Trail up through the scramble, Saddle & fire road down."
+      }
+    ]
+  },
+  {
+    "id": "dragons-tooth",
+    "name": "Dragon's Tooth",
+    "town": "Catawba",
+    "county": "Roanoke County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.3778,
+      "lng": -80.1553,
+      "x": -80.1553,
+      "y": 37.3778
+    },
+    "length_miles": 4.5,
+    "elevation_gain_ft": 1500,
+    "highest_elevation_ft": 3020,
+    "difficulty": "hard",
+    "elevation_difficulty": "steep rocky climb",
+    "route_type": "out-and-back",
+    "description": "A rugged climb to a 35-foot spire of Tuscarora quartzite. Rebar rungs and rock steps make the final push a fun scramble. The third leg of the Roanoke Triple Crown.",
+    "features": [
+      "summit",
+      "rock-scramble",
+      "triple-crown"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviews": 1180
+      },
+      "alltrails": {
+        "rating": 4.6,
+        "reviews": 2450
+      }
+    },
+    "routes": [
+      {
+        "name": "Dragon's Tooth via Boy Scout & AT",
+        "distance_miles": 4.5,
+        "difficulty": "hard",
+        "elevation_gain_ft": 1500,
+        "type": "out-and-back",
+        "description": "Boy Scout Trail to the AT and the Dragon's Tooth spur."
+      }
+    ]
+  },
+  {
+    "id": "humpback-rocks",
+    "name": "Humpback Rocks",
+    "town": "Lyndhurst",
+    "county": "Augusta County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.964,
+      "lng": -78.896,
+      "x": -78.896,
+      "y": 37.964
+    },
+    "length_miles": 2.0,
+    "elevation_gain_ft": 740,
+    "highest_elevation_ft": 3080,
+    "difficulty": "medium",
+    "elevation_difficulty": "short steep climb",
+    "route_type": "out-and-back",
+    "description": "A short but steep climb off the Blue Ridge Parkway to a rocky outcrop with 270-degree views of the Shenandoah Valley. Very popular at sunrise.",
+    "features": [
+      "overlook",
+      "blue-ridge-parkway",
+      "sunrise"
+    ],
+    "best_season": "year-round",
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviews": 1590
+      },
+      "alltrails": {
+        "rating": 4.6,
+        "reviews": 2210
+      }
+    },
+    "routes": [
+      {
+        "name": "Humpback Rocks Trail",
+        "distance_miles": 2.0,
+        "difficulty": "medium",
+        "elevation_gain_ft": 740,
+        "type": "out-and-back",
+        "description": "Direct climb from the Humpback Rocks Visitor Center."
+      }
+    ]
+  },
+  {
+    "id": "sharp-top",
+    "name": "Sharp Top Mountain",
+    "town": "Bedford",
+    "county": "Bedford County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.4432,
+      "lng": -79.606,
+      "x": -79.606,
+      "y": 37.4432
+    },
+    "length_miles": 3.0,
+    "elevation_gain_ft": 1340,
+    "highest_elevation_ft": 3875,
+    "difficulty": "medium",
+    "elevation_difficulty": "steady climb",
+    "route_type": "out-and-back",
+    "description": "One of the Peaks of Otter, Sharp Top offers a rock-capped 360-degree summit that once was believed to be the highest point in Virginia.",
+    "features": [
+      "summit",
+      "peaks-of-otter",
+      "blue-ridge-parkway"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviews": 980
+      },
+      "alltrails": {
+        "rating": 4.6,
+        "reviews": 1640
+      }
+    },
+    "routes": [
+      {
+        "name": "Sharp Top Trail",
+        "distance_miles": 3.0,
+        "difficulty": "medium",
+        "elevation_gain_ft": 1340,
+        "type": "out-and-back",
+        "description": "Paved-then-rocky climb from the Peaks of Otter picnic area."
+      }
+    ]
+  },
+  {
+    "id": "crabtree-falls",
+    "name": "Crabtree Falls",
+    "town": "Montebello",
+    "county": "Nelson County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.851,
+      "lng": -79.079,
+      "x": -79.079,
+      "y": 37.851
+    },
+    "length_miles": 3.0,
+    "elevation_gain_ft": 1200,
+    "highest_elevation_ft": 3400,
+    "difficulty": "medium",
+    "elevation_difficulty": "steady climb",
+    "route_type": "out-and-back",
+    "description": "The highest series of cascading waterfalls east of the Mississippi, dropping roughly 1,200 feet over a series of five major falls.",
+    "features": [
+      "waterfall",
+      "overlook"
+    ],
+    "best_season": "year-round",
+    "ratings": {
+      "google": {
+        "rating": 4.8,
+        "reviews": 2100
+      },
+      "alltrails": {
+        "rating": 4.7,
+        "reviews": 3020
+      }
+    },
+    "routes": [
+      {
+        "name": "Crabtree Falls Trail",
+        "distance_miles": 3.0,
+        "difficulty": "medium",
+        "elevation_gain_ft": 1200,
+        "type": "out-and-back",
+        "description": "Switchbacks past multiple waterfall overlooks to the upper falls."
+      }
+    ]
+  },
+  {
+    "id": "the-priest",
+    "name": "The Priest",
+    "town": "Montebello",
+    "county": "Nelson County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.8206,
+      "lng": -79.0736,
+      "x": -79.0736,
+      "y": 37.8206
+    },
+    "length_miles": 9.3,
+    "elevation_gain_ft": 3110,
+    "highest_elevation_ft": 4063,
+    "difficulty": "hard",
+    "elevation_difficulty": "grueling climb",
+    "route_type": "out-and-back",
+    "description": "A relentless climb on the Appalachian Trail to one of Virginia's highest peaks, with big elevation gain and a rewarding valley overlook.",
+    "features": [
+      "summit",
+      "appalachian-trail",
+      "overlook"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.6,
+        "reviews": 410
+      },
+      "alltrails": {
+        "rating": 4.7,
+        "reviews": 890
+      }
+    },
+    "routes": [
+      {
+        "name": "The Priest via Appalachian Trail",
+        "distance_miles": 9.3,
+        "difficulty": "hard",
+        "elevation_gain_ft": 3110,
+        "type": "out-and-back",
+        "description": "Climb from the Tye River up to The Priest summit and overlook."
+      }
+    ]
+  },
+  {
+    "id": "cascades-falls",
+    "name": "The Cascades",
+    "town": "Pembroke",
+    "county": "Giles County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.3538,
+      "lng": -80.5985,
+      "x": -80.5985,
+      "y": 37.3538
+    },
+    "length_miles": 4.0,
+    "elevation_gain_ft": 740,
+    "highest_elevation_ft": 2300,
+    "difficulty": "medium",
+    "elevation_difficulty": "gentle climb",
+    "route_type": "loop",
+    "description": "A gorgeous streamside hike in Jefferson National Forest leading to a 66-foot waterfall plunging into a large pool - a Virginia favorite.",
+    "features": [
+      "waterfall",
+      "stream",
+      "dog-friendly"
+    ],
+    "best_season": "year-round",
+    "ratings": {
+      "google": {
+        "rating": 4.8,
+        "reviews": 1870
+      },
+      "alltrails": {
+        "rating": 4.8,
+        "reviews": 3450
+      }
+    },
+    "routes": [
+      {
+        "name": "Cascades Falls Loop",
+        "distance_miles": 4.0,
+        "difficulty": "medium",
+        "elevation_gain_ft": 740,
+        "type": "loop",
+        "description": "Lower gorge trail up, upper trail back for a scenic loop."
+      }
+    ]
+  },
+  {
+    "id": "white-oak-canyon",
+    "name": "White Oak Canyon",
+    "town": "Syria",
+    "county": "Madison County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.5566,
+      "lng": -78.348,
+      "x": -78.348,
+      "y": 38.5566
+    },
+    "length_miles": 4.6,
+    "elevation_gain_ft": 1075,
+    "highest_elevation_ft": 2400,
+    "difficulty": "medium",
+    "elevation_difficulty": "steady climb",
+    "route_type": "out-and-back",
+    "description": "A waterfall wonderland in Shenandoah National Park with six major cascades and inviting swimming holes along the way.",
+    "features": [
+      "waterfall",
+      "swimming",
+      "stream"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviews": 1320
+      },
+      "alltrails": {
+        "rating": 4.7,
+        "reviews": 2760
+      }
+    },
+    "routes": [
+      {
+        "name": "White Oak Canyon Lower Falls",
+        "distance_miles": 4.6,
+        "difficulty": "medium",
+        "elevation_gain_ft": 1075,
+        "type": "out-and-back",
+        "description": "Lower trailhead to the first big waterfall and back."
+      },
+      {
+        "name": "White Oak Canyon & Cedar Run Loop",
+        "distance_miles": 8.1,
+        "difficulty": "hard",
+        "elevation_gain_ft": 2360,
+        "type": "loop",
+        "description": "Combines both canyons for a strenuous waterfall loop."
+      }
+    ]
+  },
+  {
+    "id": "stony-man",
+    "name": "Stony Man",
+    "town": "Luray",
+    "county": "Page County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.5936,
+      "lng": -78.3745,
+      "x": -78.3745,
+      "y": 38.5936
+    },
+    "length_miles": 1.6,
+    "elevation_gain_ft": 340,
+    "highest_elevation_ft": 4011,
+    "difficulty": "easy",
+    "elevation_difficulty": "gentle climb",
+    "route_type": "loop",
+    "description": "A short, family-friendly climb to the second-highest peak in Shenandoah National Park with expansive views of the Shenandoah Valley.",
+    "features": [
+      "summit",
+      "overlook",
+      "family-friendly"
+    ],
+    "best_season": "year-round",
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviews": 860
+      },
+      "alltrails": {
+        "rating": 4.6,
+        "reviews": 1510
+      }
+    },
+    "routes": [
+      {
+        "name": "Stony Man Loop",
+        "distance_miles": 1.6,
+        "difficulty": "easy",
+        "elevation_gain_ft": 340,
+        "type": "loop",
+        "description": "Easy loop from Skyline Drive to the Stony Man summit."
+      }
+    ]
+  },
+  {
+    "id": "hawksbill-mountain",
+    "name": "Hawksbill Mountain",
+    "town": "Luray",
+    "county": "Page County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.5566,
+      "lng": -78.3893,
+      "x": -78.3893,
+      "y": 38.5566
+    },
+    "length_miles": 2.9,
+    "elevation_gain_ft": 860,
+    "highest_elevation_ft": 4051,
+    "difficulty": "medium",
+    "elevation_difficulty": "steady climb",
+    "route_type": "loop",
+    "description": "The highest peak in Shenandoah National Park. A moderate loop leads to a stone observation platform with 360-degree Blue Ridge views.",
+    "features": [
+      "summit",
+      "overlook",
+      "highest-in-park"
+    ],
+    "best_season": "year-round",
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviews": 720
+      },
+      "alltrails": {
+        "rating": 4.7,
+        "reviews": 1290
+      }
+    },
+    "routes": [
+      {
+        "name": "Hawksbill Loop",
+        "distance_miles": 2.9,
+        "difficulty": "medium",
+        "elevation_gain_ft": 860,
+        "type": "loop",
+        "description": "Lower Hawksbill Trail up, AT and fire road down."
+      }
+    ]
+  },
+  {
+    "id": "mount-rogers",
+    "name": "Mount Rogers",
+    "town": "Whitetop",
+    "county": "Grayson County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 36.6595,
+      "lng": -81.5445,
+      "x": -81.5445,
+      "y": 36.6595
+    },
+    "length_miles": 9.4,
+    "elevation_gain_ft": 1620,
+    "highest_elevation_ft": 5729,
+    "difficulty": "hard",
+    "elevation_difficulty": "long sustained climb",
+    "route_type": "out-and-back",
+    "description": "The highest natural point in Virginia, reached through the open balds of Grayson Highlands where wild ponies roam among the rhododendron.",
+    "features": [
+      "summit",
+      "wild-ponies",
+      "highest-in-state",
+      "balds"
+    ],
+    "best_season": "late-spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.8,
+        "reviews": 640
+      },
+      "alltrails": {
+        "rating": 4.8,
+        "reviews": 1470
+      }
+    },
+    "routes": [
+      {
+        "name": "Mount Rogers via Grayson Highlands",
+        "distance_miles": 9.4,
+        "difficulty": "hard",
+        "elevation_gain_ft": 1620,
+        "type": "out-and-back",
+        "description": "Rhododendron Gap & AT through the balds to the wooded summit."
+      }
+    ]
+  },
+  {
+    "id": "tinker-cliffs",
+    "name": "Tinker Cliffs",
+    "town": "Catawba",
+    "county": "Botetourt County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.4585,
+      "lng": -79.972,
+      "x": -79.972,
+      "y": 37.4585
+    },
+    "length_miles": 7.7,
+    "elevation_gain_ft": 2000,
+    "highest_elevation_ft": 3000,
+    "difficulty": "hard",
+    "elevation_difficulty": "steep climb",
+    "route_type": "out-and-back",
+    "description": "A half-mile-long band of cliffs along the Appalachian Trail with views back toward McAfee Knob. Part of the Roanoke Triple Crown.",
+    "features": [
+      "overlook",
+      "appalachian-trail",
+      "triple-crown"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.7,
+        "reviews": 380
+      },
+      "alltrails": {
+        "rating": 4.6,
+        "reviews": 720
+      }
+    },
+    "routes": [
+      {
+        "name": "Tinker Cliffs via Andy Layne Trail",
+        "distance_miles": 7.7,
+        "difficulty": "hard",
+        "elevation_gain_ft": 2000,
+        "type": "out-and-back",
+        "description": "Andy Layne Trail to the AT and the cliff line."
+      }
+    ]
+  },
+  {
+    "id": "spy-rock",
+    "name": "Spy Rock",
+    "town": "Montebello",
+    "county": "Nelson County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 37.876,
+      "lng": -79.0895,
+      "x": -79.0895,
+      "y": 37.876
+    },
+    "length_miles": 3.2,
+    "elevation_gain_ft": 870,
+    "highest_elevation_ft": 4000,
+    "difficulty": "medium",
+    "elevation_difficulty": "steady climb with scramble",
+    "route_type": "out-and-back",
+    "description": "A short scramble up a granite dome delivers one of the best 360-degree panoramas in central Virginia, popular for sunset and stargazing.",
+    "features": [
+      "summit",
+      "overlook",
+      "rock-scramble",
+      "stargazing"
+    ],
+    "best_season": "spring-fall",
+    "ratings": {
+      "google": {
+        "rating": 4.8,
+        "reviews": 520
+      },
+      "alltrails": {
+        "rating": 4.7,
+        "reviews": 980
+      }
+    },
+    "routes": [
+      {
+        "name": "Spy Rock via Fish Hatchery Road",
+        "distance_miles": 3.2,
+        "difficulty": "medium",
+        "elevation_gain_ft": 870,
+        "type": "out-and-back",
+        "description": "Gravel road and AT connector up to the Spy Rock dome."
+      }
+    ]
+  },
+  {
+    "id": "bearfence-mountain",
+    "name": "Bearfence Mountain",
+    "town": "Stanardsville",
+    "county": "Greene County",
+    "state": "Virginia",
+    "coordinates": {
+      "lat": 38.439,
+      "lng": -78.47,
+      "x": -78.47,
+      "y": 38.439
+    },
+    "length_miles": 1.2,
+    "elevation_gain_ft": 275,
+    "highest_elevation_ft": 3620,
+    "difficulty": "medium",
+    "elevation_difficulty": "short rock scramble",
+    "route_type": "loop",
+    "description": "A short but hands-on rock scramble in Shenandoah National Park rewarding hikers with a rare 360-degree summit view.",
+    "features": [
+      "summit",
+      "rock-scramble",
+      "overlook"
+    ],
+    "best_season": "year-round",
+    "ratings": {
+      "google": {
+        "rating": 4.6,
+        "reviews": 610
+      },
+      "alltrails": {
+        "rating": 4.5,
+        "reviews": 1130
+      }
+    },
+    "routes": [
+      {
+        "name": "Bearfence Mountain Loop",
+        "distance_miles": 1.2,
+        "difficulty": "medium",
+        "elevation_gain_ft": 275,
+        "type": "loop",
+        "description": "Rock scramble up, AT back for a compact summit loop."
+      }
+    ]
+  }
+]

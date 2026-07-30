@@ -1,0 +1,76 @@
+# Local microservice stack for HokieTrails.
+#
+# Builds one backend image and runs it three times - once per microservice
+# (auth / trails / housing) - plus the Next.js frontend. All backend services
+# share a single named volume for the JSON databases.
+#
+#   docker compose up --build
+#
+# Frontend:      http://localhost:3000
+# API gateway:   http://localhost:8080  (routes /api/auth|trails|housing)
+# Auth API:      http://localhost:5001
+# Trails API:    http://localhost:5002
+# Housing API:   http://localhost:5003
+
+services:
+  auth-service:
+    build: ./backend
+    environment:
+      SERVICE: auth
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-change-me}
+      DATA_DIR: /data
+      CORS_ORIGINS: http://localhost:3000
+    ports:
+      - "5001:5000"
+    volumes:
+      - hokie-data:/data
+
+  trails-service:
+    build: ./backend
+    environment:
+      SERVICE: trails
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-change-me}
+      DATA_DIR: /data
+      CORS_ORIGINS: http://localhost:3000
+    ports:
+      - "5002:5000"
+    volumes:
+      - hokie-data:/data
+
+  housing-service:
+    build: ./backend
+    environment:
+      SERVICE: housing
+      SECRET_KEY: ${SECRET_KEY:-dev-secret-change-me}
+      DATA_DIR: /data
+      CORS_ORIGINS: http://localhost:3000
+    ports:
+      - "5003:5000"
+    volumes:
+      - hokie-data:/data
+
+  api-gateway:
+    image: nginx:1.27-alpine
+    volumes:
+      - ./deploy/gateway/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      - auth-service
+      - trails-service
+      - housing-service
+
+  frontend:
+    build:
+      context: ./frontend/hokie-trails
+      args:
+        # The frontend talks to every service through the single gateway.
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8080}
+        NEXT_PUBLIC_GOOGLE_MAP_API: ${NEXT_PUBLIC_GOOGLE_MAP_API:-}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api-gateway
+
+volumes:
+  hokie-data:
